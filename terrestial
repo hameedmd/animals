@@ -6,6 +6,15 @@ namespace animals_task
 {
     public class TerrestrialAnimalV1
     {
+        public void Move(int NumberOfLegs)
+        {
+            Console.WriteLine($"I am walking with {NumberOfLegs} legs");
+        }
+
+        public void SayHi(string Name)
+        {
+            Console.WriteLine($"Hello I am a(n) {Name}");
+        }
 
         public int NumberOfLegs { get; set; }
         public string Name { get; set; }
@@ -15,17 +24,5 @@ namespace animals_task
             NumberOfLegs = numberOfLegs;
             Name = name;
         }
-
-        public void Move(int numberOfLegs)
-        {
-            Console.WriteLine($"I am walking with {NumberOfLegs}");
-        }
-
-        public void SayHi(int name)
-        {
-            Console.WriteLine($"Hello I am a(n) {Name}");
-        }
     }
 }
-
- 
