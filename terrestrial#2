@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace animal1
+{
+    public class TerrestrialAnimalV1 : Animal
+    {
+        public int NumberOfLegs { get; set; }
+        public string Name { get; set; }
+
+        public TerrestrialAnimalV1(int numberOfLegs, string name)
+        {
+            NumberOfLegs = numberOfLegs;
+            Name = name;
+        }
+
+        public void Roam()
+        {
+            Console.WriteLine("I roam the land");
+        }
+    }
+}
