@@ -20,6 +20,12 @@ namespace animals_task
         {
             Console.WriteLine($"I am walking with {NumberOfLegs}");
         }
+
+        public void SayHi(int name)
+        {
+            Console.WriteLine($"Hello I am a(n) {Name}");
+        }
     }
 }
 
+ 
