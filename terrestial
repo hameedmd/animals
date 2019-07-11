@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace animals_task
+{
+    public class TerrestrialAnimalV1
+    {
+        public void Move(int NumberOfLegs)
+        {
+            Console.WriteLine($"I am walking with {NumberOfLegs} legs");
+        }
+
+        public void SayHi(string Name)
+        {
+            Console.WriteLine($"Hello I am a(n) {Name}");
+        }
+
+        public int NumberOfLegs { get; set; }
+        public string Name { get; set; }
+
+        public TerrestrialAnimalV1(int numberOfLegs, string name)
+        {
+            NumberOfLegs = numberOfLegs;
+            Name = name;
+        }
+    }
+}
