@@ -1,0 +1,43 @@
+using System;
+
+namespace animal1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var animal1 = new TerrestrialAnimalV1(4, "Lion");
+            var animal2 = new TerrestrialAnimalV1(4, "Giraffe");
+            var animal3 = new TerrestrialAnimalV1(2, "Meerkat");
+
+            var animal4 = new AerialAnimal(2, "Owl");
+            var animal5 = new AerialAnimal(4, "Butterfly");
+            var animal6 = new AerialAnimal(2, "Eagle");
+
+            animal1.SayHi(animal1.Name);
+            animal1.Move(animal1.NumberOfLegs);
+            animal1.Roam();
+            
+            animal2.SayHi(animal2.Name);
+            animal2.Move(animal2.NumberOfLegs);
+            animal2.Roam();
+            
+            animal3.SayHi(animal3.Name);
+            animal3.Move(animal3.NumberOfLegs);
+            animal3.Roam();
+            
+
+            animal4.SayHi(animal4.Name);
+            animal4.Move(animal4.NumberOfWings);
+            animal4.Fly();
+            
+            
+            animal5.SayHi(animal5.Name);
+            animal5.Move(animal5.NumberOfWings);
+            animal5.Fly();
+
+            animal6.SayHi(animal6.Name);
+            animal6.Move(animal6.NumberOfWings);
+            animal6.Fly();
+        }
+    }
