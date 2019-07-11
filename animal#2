@@ -1,0 +1,17 @@
+using System;
+
+namespace animal1
+{
+    public class Animal
+    {
+        public void Move(int NumberOfWings)
+        {
+            Console.WriteLine($"I am flying with {NumberOfWings} wings");
+        }
+
+        public void SayHi(string Name)
+        {
+            Console.WriteLine($"Hello I am a(n) {Name}");
+        }
+    }
+}
