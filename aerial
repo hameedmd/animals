@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace animal1
+{
+    public class AerialAnimal : Animal
+    {
+        public int NumberOfWings { get; set; }
+        public string Name { get; set; }
+
+        public AerialAnimal(int numberOfWings, string name)
+        {
+            numberOfWings = numberOfWings;
+            Name = name;
+        }
+
+        public void Fly()
+        {
+            Console.WriteLine("I can fly high");
+        }
+    }
+}
