@@ -18,11 +18,10 @@ namespace animals_task
         public int NumberOfLegs { get; set; }
         public string Name { get; set; }
 
-        public TerrestrialAnimalV2(int numberOfLegs, string name)
+        
+        public TerrestrialAnimalV2()
         {
-            NumberOfLegs = numberOfLegs;
-            Name = name;
+            
         }
     }
 }
-
