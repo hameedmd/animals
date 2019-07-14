@@ -6,12 +6,12 @@ namespace animals_task
 {
     public class TerrestrialAnimalV1
     {
-        public void Move(int NumberOfLegs)
+        public void Move()
         {
             Console.WriteLine($"I am walking with {NumberOfLegs} legs");
         }
 
-        public void SayHi(string Name)
+        public void SayHi()
         {
             Console.WriteLine($"Hello I am a(n) {Name}");
         }
