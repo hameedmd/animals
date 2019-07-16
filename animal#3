@@ -4,12 +4,19 @@ namespace animal1
 {
     public class Animal
     {
-        public void Move(int NumberOfLegs)
+        private int NumberOfLegs { get; }
+        private string Name { get; }
+
+        public Animal(int numberOfLegs, string name)
+        {
+            NumberOfLegs = numberOfLegs;
+            Name = name;
+        }
+        public void Move()
         {
             Console.WriteLine($"I am walking with {NumberOfLegs} legs");
         }
-
-        public void SayHi(string Name)
+        public void SayHi()
         {
             Console.WriteLine($"Hello I am a(n) {Name}");
         }
