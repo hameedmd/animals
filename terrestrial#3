@@ -1,14 +1,24 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace animal1
 {
-    public class TerrestrialAnimalV1 : Animal
+    public class Animal
     {
-        public void Roam()
+        private int NumberOfLegs { get; }
+        private string Name { get; }
+
+        public Animal(int numberOfLegs, string name)
         {
-            Console.WriteLine("I roam the land");
+            NumberOfLegs = numberOfLegs;
+            Name = name;
+        }
+        public void Move()
+        {
+            Console.WriteLine($"I am walking with {NumberOfLegs} legs");
+        }
+        public void SayHi()
+        {
+            Console.WriteLine($"Hello I am a(n) {Name}");
         }
     }
 }
