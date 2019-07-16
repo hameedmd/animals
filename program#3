@@ -6,7 +6,7 @@ namespace animal1
     {
         static void Main(string[] args)
         {
-            var lionTA = new Animal(4, "Lion");
+            var lionTA = new TerrestrialAnimalV1(4, "Lion");
             var giraffeTA = new TerrestrialAnimalV1(4, "Giraffe");
             var meerkatTA = new TerrestrialAnimalV1(2, "Meerkat");
 
