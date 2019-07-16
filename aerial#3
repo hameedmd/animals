@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace animal1
+{
+    public class AerialAnimal : Animal
+    {
+        public void Fly()
+        {
+            Console.WriteLine("However I am able to also fly high with my wings!");
+        }
+    }
+}
