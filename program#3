@@ -6,39 +6,37 @@ namespace animal1
     {
         static void Main(string[] args)
         {
-            var animal1 = new TerrestrialAnimalV1();
-            var animal2 = new TerrestrialAnimalV1();
-            var animal3 = new TerrestrialAnimalV1();
+            var lionTA = new Animal(4, "Lion");
+            var giraffeTA = new TerrestrialAnimalV1(4, "Giraffe");
+            var meerkatTA = new TerrestrialAnimalV1(2, "Meerkat");
 
-            var animal4 = new AerialAnimal();
-            var animal5 = new AerialAnimal();
-            var animal6 = new AerialAnimal();
+            var owlAA = new AerialAnimal(2, "Owl");
+            var butterflyAA = new AerialAnimal(6, "Butterfly");
+            var eagleAa = new AerialAnimal(2, "Eagle");
 
-            animal1.SayHi("Lion");
-            animal1.Move(4);
-            animal1.Roam();
+            lionTA.SayHi();
+            lionTA.Move();
+            lionTA.Roam();
 
-            animal2.SayHi("Giraffe");
-            animal2.Move(4);
-            animal2.Roam();
+            giraffeTA.SayHi();
+            giraffeTA.Move();
+            giraffeTA.Roam();
 
-            animal3.SayHi("Meerkat");
-            animal3.Move(2);
-            animal3.Roam();
+            meerkatTA.SayHi();
+            meerkatTA.Move();
+            meerkatTA.Roam();
 
+            owlAA.SayHi();
+            owlAA.Move();
+            owlAA.Fly();
 
-            animal4.SayHi("Owl");
-            animal4.Move(2);
-            animal4.Fly();
+            butterflyAA.SayHi();
+            butterflyAA.Move();
+            butterflyAA.Fly();
 
-
-            animal5.SayHi("Butterfly");
-            animal5.Move(6);
-            animal5.Fly();
-
-            animal6.SayHi("Eagle");
-            animal6.Move(2);
-            animal6.Fly();
+            eagleAa.SayHi();
+            eagleAa.Move();
+            eagleAa.Fly();
         }
     }
 }
