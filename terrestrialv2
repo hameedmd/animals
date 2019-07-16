@@ -4,24 +4,26 @@ using System.Text;
 
 namespace animals_task
 {
-    public class TerrestrialAnimalV2
+    public class TerrestrialAnimalV1
     {
-        public void Move(int NumberOfLegs)
+        public void Move()
         {
             Console.WriteLine($"I am walking with {NumberOfLegs} legs");
         }
 
-        public void SayHi(string Name)
+        public void SayHi()
         {
             Console.WriteLine($"Hello I am a(n) {Name}");
         }
+
         public int NumberOfLegs { get; set; }
         public string Name { get; set; }
 
-        
-        public TerrestrialAnimalV2()
+        public TerrestrialAnimalV1(int numberOfLegs, string name)
         {
-            
+            NumberOfLegs = numberOfLegs;
+            Name = name;
         }
     }
 }
+
