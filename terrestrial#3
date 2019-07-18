@@ -1,16 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace animal1
+namespace animalV2
 {
     public class TerrestrialAnimalV1 : Animal
     {
         public TerrestrialAnimalV1(int numberOfLegs, string name) : base(numberOfLegs, name)
         {
         }
-
-        public void Roam()
+        public static void Roam()
         {
             Console.WriteLine("I roam the land");
         }
