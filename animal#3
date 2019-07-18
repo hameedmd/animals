@@ -1,13 +1,13 @@
 using System;
 
-namespace animal1
+namespace animalV2
 {
     public class Animal
     {
         private int NumberOfLegs { get; }
         private string Name { get; }
 
-        public Animal(int numberOfLegs, string name)
+        protected Animal(int numberOfLegs, string name)
         {
             NumberOfLegs = numberOfLegs;
             Name = name;
