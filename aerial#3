@@ -1,16 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace animal1
+namespace animalV2
 {
     public class AerialAnimal : Animal
     {
         public AerialAnimal(int numberOfLegs, string name) : base(numberOfLegs, name)
         {
         }
-
-        public void Fly()
+        public static void Fly()
          {
              Console.WriteLine("However I am able to also fly high with my wings!");
          }
