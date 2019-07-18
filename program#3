@@ -1,42 +1,34 @@
-using System;
-
-namespace animal1
-{
-    class Program
+namespace animalV2
+{ 
+    public static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            var lionTA = new TerrestrialAnimalV1(4, "Lion");
-            var giraffeTA = new TerrestrialAnimalV1(4, "Giraffe");
-            var meerkatTA = new TerrestrialAnimalV1(2, "Meerkat");
-
-            var owlAA = new AerialAnimal(2, "Owl");
-            var butterflyAA = new AerialAnimal(6, "Butterfly");
+            var lionTa = new TerrestrialAnimalV1(4, "Lion");
+            var giraffeTa = new TerrestrialAnimalV1(4, "Giraffe");
+            var meerkatTa = new TerrestrialAnimalV1(2, "Meerkat");
+            var owlAa = new AerialAnimal(2, "Owl");
+            var butterflyAa = new AerialAnimal(6, "Butterfly");
             var eagleAa = new AerialAnimal(2, "Eagle");
 
-            lionTA.SayHi();
-            lionTA.Move();
-            lionTA.Roam();
-
-            giraffeTA.SayHi();
-            giraffeTA.Move();
-            giraffeTA.Roam();
-
-            meerkatTA.SayHi();
-            meerkatTA.Move();
-            meerkatTA.Roam();
-
-            owlAA.SayHi();
-            owlAA.Move();
-            owlAA.Fly();
-
-            butterflyAA.SayHi();
-            butterflyAA.Move();
-            butterflyAA.Fly();
-
+            lionTa.SayHi();
+            lionTa.Move();
+            TerrestrialAnimalV1.Roam();
+            giraffeTa.SayHi();
+            giraffeTa.Move();
+            TerrestrialAnimalV1.Roam();
+            meerkatTa.SayHi();
+            meerkatTa.Move();
+            TerrestrialAnimalV1.Roam();
+            owlAa.SayHi();
+            owlAa.Move();
+            AerialAnimal.Fly();
+            butterflyAa.SayHi();
+            butterflyAa.Move();
+            AerialAnimal.Fly();
             eagleAa.SayHi();
             eagleAa.Move();
-            eagleAa.Fly();
+            AerialAnimal.Fly();
         }
     }
 }
